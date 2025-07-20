@@ -1,0 +1,32 @@
+import { Terminal, User, FileText } from "lucide-react";
+
+const TerminalHeader = () => {
+  return (
+    <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
+      <div className="container mx-auto px-4 py-4">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center space-x-3">
+            <Terminal className="h-6 w-6 text-primary glow-text" />
+            <h1 className="text-xl font-mono font-semibold glow-text">
+              <span className="text-muted-foreground">user@terminal:</span>
+              <span className="text-primary">~/blog</span>
+            </h1>
+          </div>
+          
+          <nav className="flex items-center space-x-6">
+            <a href="#posts" className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors blog-link">
+              <FileText className="h-4 w-4" />
+              <span className="font-mono">./posts</span>
+            </a>
+            <a href="#about" className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors blog-link">
+              <User className="h-4 w-4" />
+              <span className="font-mono">./about</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default TerminalHeader;
