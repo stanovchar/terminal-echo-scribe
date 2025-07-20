@@ -1,5 +1,5 @@
 import TerminalHeader from "@/components/TerminalHeader";
-import TerminalWelcome from "@/components/TerminalWelcome";
+import TreeNavigation from "@/components/TreeNavigation";
 import BlogList from "@/components/BlogList";
 import AboutSection from "@/components/AboutSection";
 
@@ -8,7 +8,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <TerminalHeader />
       <main>
-        <TerminalWelcome />
+        <TreeNavigation />
         <BlogList />
         <AboutSection />
       </main>

@@ -1,4 +1,4 @@
-import { Terminal, User, FileText } from "lucide-react";
+import { Terminal } from "lucide-react";
 
 const TerminalHeader = () => {
   return (
@@ -12,17 +12,6 @@ const TerminalHeader = () => {
               <span className="text-primary glow-text">~/blog</span>
             </h1>
           </div>
-          
-          <nav className="flex items-center space-x-6">
-            <a href="#posts" className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors blog-link">
-              <FileText className="h-4 w-4" />
-              <span className="font-mono">./posts</span>
-            </a>
-            <a href="#about" className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors blog-link">
-              <User className="h-4 w-4" />
-              <span className="font-mono">./about</span>
-            </a>
-          </nav>
         </div>
       </div>
     </header>
