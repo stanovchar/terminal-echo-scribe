@@ -7,7 +7,7 @@ const BlogList = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="terminal-prompt mb-8">
-            <span className="text-primary font-mono text-xl glow-text">ls -la ./posts/</span>
+            <span className="text-accent font-mono text-xl glow-text">ls -la ./posts/</span>
           </div>
           
           <div className="terminal-output mb-8">

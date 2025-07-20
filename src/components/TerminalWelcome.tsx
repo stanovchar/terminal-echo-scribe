@@ -6,7 +6,7 @@ const TerminalWelcome = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="terminal-prompt mb-6">
-            <span className="text-primary font-mono text-lg glow-text">welcome --verbose</span>
+            <span className="text-accent font-mono text-lg glow-text">welcome --verbose</span>
           </div>
           
           <div className="space-y-4 mb-12">
