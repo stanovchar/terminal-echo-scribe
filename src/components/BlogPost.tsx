@@ -1,5 +1,6 @@
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 interface BlogPostProps {
   title: string;
@@ -53,10 +54,13 @@ const BlogPost = ({ title, excerpt, date, readTime, slug, tags }: BlogPostProps)
             </div>
           </div>
           
-          <button className="flex items-center space-x-1 text-primary hover:text-primary/80 transition-colors group-hover:translate-x-1 transform duration-200">
+          <Link 
+            to={`/posts/${slug}`}
+            className="flex items-center space-x-1 text-primary hover:text-primary/80 transition-colors group-hover:translate-x-1 transform duration-200"
+          >
             <span className="font-mono">read more</span>
             <ArrowRight className="h-4 w-4" />
-          </button>
+          </Link>
         </div>
       </div>
     </Card>
